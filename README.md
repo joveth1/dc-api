@@ -10,6 +10,7 @@
 | https://github.com/joveth1/dc-api | 服务端接口，包括小程序、管理端、终端等接口（java开发），用户提供相关接口 |
 | https://github.com/joveth1/dc-ui | 管理端前端代码（vue开发），用于展示门店营业信息等|
 | https://github.com/joveth1/dc-pos | 终端点餐程序，包括人工点餐终端程序、大屏等待叫号程序（暂定android），用于人工点餐和叫号屏幕通知等 |
+| https://github.com/joveth1/dc-meta | 点餐元宇宙（待定），即便是元宇宙也要吃饭的吧 |
 
 
 ### 待做列表
