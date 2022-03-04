@@ -1,0 +1,5 @@
+rootProject.name = 'dc-api'
+include 'dc-common'
+include 'dc-mng-api'
+include 'dc-mini-api'
+include 'dc-pos-api'

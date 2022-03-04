@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+dependencies {
+    implementation project(":dc-common")
+}
+
+springBoot {
+    buildInfo ()
+}
+
+bootJar {
+    archivesBaseName = 'dc-mini-api'
+}
