@@ -23,4 +23,13 @@
 - [ ] 订单明细
 - [ ] 微信对账
 - [ ] 营业统计
+- [ ] 小程序开发
+- [ ] 终端结算程序
+
+### 效果图
+
+![071CF799-B80A-412c-86E1-648020179628](https://user-images.githubusercontent.com/60052224/156721283-d79df7ba-5161-4a65-974e-074ccc0067a8.png)
+
+![7964CA41-E6B9-4f50-B8C3-23D9FDCA9E3E](https://user-images.githubusercontent.com/60052224/156721276-3ceec4e8-2005-4715-8277-cd8312f8baec.png)
+
 
