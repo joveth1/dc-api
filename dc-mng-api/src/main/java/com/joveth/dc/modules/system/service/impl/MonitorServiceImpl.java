@@ -18,7 +18,7 @@ package com.joveth.dc.modules.system.service.impl;
 import cn.hutool.core.date.BetweenFormatter;
 import cn.hutool.core.date.DateUtil;
 import com.joveth.dc.modules.system.service.MonitorService;
-import com.joveth.dc.utils.ElAdminConstant;
+import com.joveth.dc.utils.ApiConstant;
 import com.joveth.dc.utils.FileUtil;
 import com.joveth.dc.utils.StringUtils;
 import org.springframework.stereotype.Service;
@@ -78,7 +78,7 @@ public class MonitorServiceImpl implements MonitorService {
         long available = 0, total = 0;
         for (OSFileStore fs : fsArray){
             // windows 需要将所有磁盘分区累加，linux 和 mac 直接累加会出现磁盘重复的问题，待修复
-            if(osName.toLowerCase().startsWith(ElAdminConstant.WIN)) {
+            if(osName.toLowerCase().startsWith(ApiConstant.WIN)) {
                 available += fs.getUsableSpace();
                 total += fs.getTotalSpace();
             } else {

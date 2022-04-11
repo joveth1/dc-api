@@ -1,10 +1,10 @@
 package com.joveth.dc.modules.shop.service.impl;
 
 import com.joveth.dc.exception.EntityExistException;
-import com.joveth.dc.modules.shop.domain.Food;
-import com.joveth.dc.modules.shop.query.FoodQueryCriteria;
-import com.joveth.dc.modules.shop.repository.FoodRepository;
-import com.joveth.dc.modules.shop.repository.TypeRepository;
+import com.joveth.dc.shop.domain.Food;
+import com.joveth.dc.shop.query.FoodQueryCriteria;
+import com.joveth.dc.shop.repository.FoodRepository;
+import com.joveth.dc.shop.repository.TypeRepository;
 import com.joveth.dc.modules.shop.service.FoodService;
 import com.joveth.dc.modules.system.domain.User;
 import com.joveth.dc.utils.PageUtil;

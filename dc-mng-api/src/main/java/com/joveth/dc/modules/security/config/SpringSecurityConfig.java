@@ -15,12 +15,11 @@
  */
 package com.joveth.dc.modules.security.config;
 
-import com.google.common.collect.ImmutableList;
 import com.joveth.dc.modules.security.security.TokenConfigurer;
-import com.joveth.dc.jwt.TokenProvider;
+import com.joveth.dc.modules.security.security.TokenProvider;
 import lombok.RequiredArgsConstructor;
 import com.joveth.dc.annotation.AnonymousAccess;
-import com.joveth.dc.jwt.SecurityProperties;
+import com.joveth.dc.modules.security.security.SecurityProperties;
 import com.joveth.dc.modules.security.security.*;
 import com.joveth.dc.modules.security.service.OnlineUserService;
 import com.joveth.dc.modules.security.service.UserCacheClean;
@@ -39,9 +38,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;

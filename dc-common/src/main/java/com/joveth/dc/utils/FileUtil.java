@@ -20,10 +20,12 @@ import cn.hutool.core.util.IdUtil;
 import cn.hutool.poi.excel.BigExcelWriter;
 import cn.hutool.poi.excel.ExcelUtil;
 import com.joveth.dc.exception.BadRequestException;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.util.IOUtils;
 import org.apache.poi.xssf.streaming.SXSSFSheet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.system.ApplicationHome;
 import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
@@ -32,6 +34,7 @@ import java.io.*;
 import java.security.MessageDigest;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -42,10 +45,8 @@ import java.util.Map;
  * @author Zheng Jie
  * @date 2018-12-27
  */
+@Slf4j
 public class FileUtil extends cn.hutool.core.io.FileUtil {
-
-    private static final Logger log = LoggerFactory.getLogger(FileUtil.class);
-
     /**
      * 系统临时目录
      * <br>
@@ -353,4 +354,58 @@ public class FileUtil extends cn.hutool.core.io.FileUtil {
     public static String getMd5(File file) {
         return getMd5(getByte(file));
     }
+    private static final String[] suffixWhiteList = {"PNG", "JPEG", "JPG", "GIF", "BMP", "ICO", "XLS", "XLSX"};
+
+    /**
+     * 获取springboot所在目录
+     */
+    public static String getPath() {
+        try {
+            ApplicationHome h = new ApplicationHome(FileUtil.class);
+            File jarF = h.getSource();
+            return jarF.getParentFile().getAbsolutePath();
+        } catch (Exception e) {
+            log.error("文件路径获取失败:{}", e.getMessage());
+        }
+        return null;
+    }
+
+    public static String getPath(String dir) {
+        String path = "";
+        try {
+            ApplicationHome h = new ApplicationHome(FileUtil.class);
+            File jarF = h.getSource();
+            path = jarF.getParentFile().getAbsolutePath().concat(File.separator).concat(dir);
+        } catch (Exception e) {
+            log.error("文件路径获取失败:{}", e.getMessage());
+        }
+        File p = new File(path);
+        if (!p.exists()) {
+            // 如果目录不存在
+            p.mkdir();
+        }
+        return path;
+    }
+
+    /**
+     * 判断是否是安全的文件
+     * 防止恶意文件上传
+     */
+    public static boolean isSafeFile(String fileName) {
+        int lastIndex = fileName.lastIndexOf(".");
+        if (lastIndex < 0) {
+            return true;
+        }
+        String suffix = fileName.substring(lastIndex + 1);
+        return Arrays.stream(suffixWhiteList).anyMatch(x -> x.equalsIgnoreCase(suffix));
+    }
+
+    public static boolean isSafeFile(File file) {
+        return isSafeFile(file.getName());
+    }
+
+    public static boolean isSafeFile(MultipartFile multipartFile) {
+        return isSafeFile(multipartFile.getName());
+    }
+
 }

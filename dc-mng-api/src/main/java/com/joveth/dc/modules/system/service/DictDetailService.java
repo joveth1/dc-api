@@ -15,9 +15,9 @@
  */
 package com.joveth.dc.modules.system.service;
 
-import com.joveth.dc.modules.system.domain.DictDetail;
-import com.joveth.dc.modules.system.service.dto.DictDetailDto;
-import com.joveth.dc.modules.system.service.dto.DictDetailQueryCriteria;
+import com.joveth.dc.domain.DictDetail;
+import com.joveth.dc.domain.dto.DictDetailDto;
+import com.joveth.dc.domain.dto.DictDetailQueryCriteria;
 import org.springframework.data.domain.Pageable;
 import java.util.List;
 import java.util.Map;

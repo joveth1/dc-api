@@ -5,6 +5,11 @@ plugins {
 }
 dependencies {
     implementation project(":dc-common")
+
+
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.1'
+    implementation 'io.jsonwebtoken:jjwt-impl:0.11.1'
+    implementation 'io.jsonwebtoken:jjwt-jackson:0.11.1'
     implementation 'com.github.whvcse:easy-captcha:1.6.2'
     implementation 'org.quartz-scheduler:quartz:2.3.2'
     implementation 'com.github.oshi:oshi-core:5.7.1'

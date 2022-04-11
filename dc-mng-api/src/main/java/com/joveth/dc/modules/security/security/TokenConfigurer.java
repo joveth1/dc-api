@@ -15,8 +15,6 @@
  */
 package com.joveth.dc.modules.security.security;
 
-import com.joveth.dc.jwt.SecurityProperties;
-import com.joveth.dc.jwt.TokenProvider;
 import lombok.RequiredArgsConstructor;
 import com.joveth.dc.modules.security.service.OnlineUserService;
 import com.joveth.dc.modules.security.service.UserCacheClean;

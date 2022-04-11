@@ -16,9 +16,9 @@
 package com.joveth.dc.modules.shop.service.impl;
 
 import com.joveth.dc.exception.EntityExistException;
-import com.joveth.dc.modules.shop.domain.SpecDetail;
-import com.joveth.dc.modules.shop.query.SpecDetailQueryCriteria;
-import com.joveth.dc.modules.shop.repository.SpecDetailRepository;
+import com.joveth.dc.shop.domain.SpecDetail;
+import com.joveth.dc.shop.query.SpecDetailQueryCriteria;
+import com.joveth.dc.shop.repository.SpecDetailRepository;
 import com.joveth.dc.modules.shop.service.SpecDetailService;
 import com.joveth.dc.modules.system.domain.User;
 import com.joveth.dc.utils.*;

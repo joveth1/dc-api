@@ -16,7 +16,7 @@
 package com.joveth.dc.config;
 
 import lombok.Data;
-import com.joveth.dc.utils.ElAdminConstant;
+import com.joveth.dc.utils.ApiConstant;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
@@ -42,9 +42,9 @@ public class FileProperties {
 
     public ElPath getPath(){
         String os = System.getProperty("os.name");
-        if(os.toLowerCase().startsWith(ElAdminConstant.WIN)) {
+        if(os.toLowerCase().startsWith(ApiConstant.WIN)) {
             return windows;
-        } else if(os.toLowerCase().startsWith(ElAdminConstant.MAC)){
+        } else if(os.toLowerCase().startsWith(ApiConstant.MAC)){
             return mac;
         }
         return linux;

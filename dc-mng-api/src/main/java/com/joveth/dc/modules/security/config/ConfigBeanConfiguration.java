@@ -16,7 +16,7 @@
 package com.joveth.dc.modules.security.config;
 
 import com.joveth.dc.modules.security.config.bean.LoginProperties;
-import com.joveth.dc.jwt.SecurityProperties;
+import com.joveth.dc.modules.security.security.SecurityProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

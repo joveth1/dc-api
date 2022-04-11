@@ -1,13 +1,10 @@
 package com.joveth.dc.modules.shop.service.impl;
 
 import com.joveth.dc.exception.EntityExistException;
-import com.joveth.dc.modules.shop.domain.Spec;
-import com.joveth.dc.modules.shop.domain.Type;
-import com.joveth.dc.modules.shop.query.SpecQueryCriteria;
-import com.joveth.dc.modules.shop.query.TypeQueryCriteria;
-import com.joveth.dc.modules.shop.repository.SpecRepository;
-import com.joveth.dc.modules.shop.repository.TypeRepository;
-import com.joveth.dc.modules.shop.service.SpecService;
+import com.joveth.dc.shop.domain.Type;
+import com.joveth.dc.shop.query.SpecQueryCriteria;
+import com.joveth.dc.shop.query.TypeQueryCriteria;
+import com.joveth.dc.shop.repository.TypeRepository;
 import com.joveth.dc.modules.shop.service.TypeService;
 import com.joveth.dc.modules.system.domain.User;
 import com.joveth.dc.modules.utils.WebConstants;
@@ -20,7 +17,6 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * @author Joveth

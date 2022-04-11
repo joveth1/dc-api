@@ -15,16 +15,16 @@
  */
 package com.joveth.dc.modules.system.service.impl;
 
-import com.joveth.dc.modules.system.service.dto.DictSmallDto;
+import com.joveth.dc.domain.dto.DictSmallDto;
 import lombok.RequiredArgsConstructor;
-import com.joveth.dc.modules.system.domain.Dict;
-import com.joveth.dc.modules.system.domain.DictDetail;
-import com.joveth.dc.modules.system.repository.DictRepository;
-import com.joveth.dc.modules.system.service.dto.DictDetailQueryCriteria;
+import com.joveth.dc.domain.Dict;
+import com.joveth.dc.domain.DictDetail;
+import com.joveth.dc.repository.DictRepository;
+import com.joveth.dc.domain.dto.DictDetailQueryCriteria;
 import com.joveth.dc.utils.*;
-import com.joveth.dc.modules.system.repository.DictDetailRepository;
+import com.joveth.dc.repository.DictDetailRepository;
 import com.joveth.dc.modules.system.service.DictDetailService;
-import com.joveth.dc.modules.system.service.dto.DictDetailDto;
+import com.joveth.dc.domain.dto.DictDetailDto;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;

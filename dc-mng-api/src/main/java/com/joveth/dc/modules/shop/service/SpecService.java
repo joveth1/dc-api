@@ -1,7 +1,7 @@
 package com.joveth.dc.modules.shop.service;
 
-import com.joveth.dc.modules.shop.domain.Spec;
-import com.joveth.dc.modules.shop.query.SpecQueryCriteria;
+import com.joveth.dc.shop.domain.Spec;
+import com.joveth.dc.shop.query.SpecQueryCriteria;
 import org.springframework.data.domain.Pageable;
 
 import java.util.Set;

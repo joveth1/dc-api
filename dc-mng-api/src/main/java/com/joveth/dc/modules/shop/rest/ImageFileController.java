@@ -2,9 +2,8 @@ package com.joveth.dc.modules.shop.rest;
 
 import com.joveth.dc.annotation.AnonymousAccess;
 import com.joveth.dc.annotation.rest.AnonymousGetMapping;
-import com.joveth.dc.modules.shop.service.FoodService;
-import com.joveth.dc.modules.shop.service.ImageFileService;
-import com.joveth.dc.modules.utils.FileUtils;
+import com.joveth.dc.service.ImageFileService;
+import com.joveth.dc.utils.FileUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -31,7 +30,7 @@ public class ImageFileController {
     @AnonymousAccess
     @AnonymousGetMapping(value = "/{filename}", produces = MediaType.IMAGE_JPEG_VALUE)
     public ResponseEntity<Object> query(@PathVariable String filename) {
-        if (filename == null || !FileUtils.isSafeFile(filename)) {
+        if (filename == null || !FileUtil.isSafeFile(filename)) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
         File file = imageFileService.getImageFile(filename);

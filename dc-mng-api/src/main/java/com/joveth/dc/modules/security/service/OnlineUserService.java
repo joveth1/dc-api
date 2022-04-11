@@ -16,7 +16,7 @@
 package com.joveth.dc.modules.security.service;
 
 import lombok.extern.slf4j.Slf4j;
-import com.joveth.dc.jwt.SecurityProperties;
+import com.joveth.dc.modules.security.security.SecurityProperties;
 import com.joveth.dc.modules.security.service.dto.JwtUserDto;
 import com.joveth.dc.modules.security.service.dto.OnlineUserDto;
 import com.joveth.dc.utils.*;

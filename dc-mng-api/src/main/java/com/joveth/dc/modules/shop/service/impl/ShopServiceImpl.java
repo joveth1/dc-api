@@ -1,9 +1,9 @@
 package com.joveth.dc.modules.shop.service.impl;
 
 import com.joveth.dc.exception.EntityExistException;
-import com.joveth.dc.modules.shop.domain.Shop;
-import com.joveth.dc.modules.shop.query.ShopQueryCriteria;
-import com.joveth.dc.modules.shop.repository.ShopRepository;
+import com.joveth.dc.shop.domain.Shop;
+import com.joveth.dc.shop.query.ShopQueryCriteria;
+import com.joveth.dc.shop.repository.ShopRepository;
 import com.joveth.dc.modules.shop.service.ShopService;
 import com.joveth.dc.modules.system.domain.User;
 import com.joveth.dc.modules.utils.WebConstants;

@@ -16,8 +16,6 @@
 package com.joveth.dc.modules.security.security;
 
 import cn.hutool.core.util.StrUtil;
-import com.joveth.dc.jwt.SecurityProperties;
-import com.joveth.dc.jwt.TokenProvider;
 import com.joveth.dc.modules.security.service.UserCacheClean;
 import com.joveth.dc.modules.security.service.dto.OnlineUserDto;
 import com.joveth.dc.modules.security.service.OnlineUserService;

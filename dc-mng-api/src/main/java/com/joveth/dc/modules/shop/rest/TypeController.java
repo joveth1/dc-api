@@ -2,11 +2,8 @@ package com.joveth.dc.modules.shop.rest;
 
 import com.joveth.dc.annotation.Log;
 import com.joveth.dc.exception.BadRequestException;
-import com.joveth.dc.modules.shop.domain.Spec;
-import com.joveth.dc.modules.shop.domain.Type;
-import com.joveth.dc.modules.shop.query.SpecQueryCriteria;
-import com.joveth.dc.modules.shop.query.TypeQueryCriteria;
-import com.joveth.dc.modules.shop.service.SpecService;
+import com.joveth.dc.shop.domain.Type;
+import com.joveth.dc.shop.query.TypeQueryCriteria;
 import com.joveth.dc.modules.shop.service.TypeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;

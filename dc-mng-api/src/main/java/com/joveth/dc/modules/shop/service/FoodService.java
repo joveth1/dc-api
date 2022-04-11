@@ -1,8 +1,7 @@
 package com.joveth.dc.modules.shop.service;
 
-import com.joveth.dc.modules.shop.domain.Food;
-import com.joveth.dc.modules.shop.query.FoodQueryCriteria;
-import com.joveth.dc.modules.system.service.dto.UserQueryCriteria;
+import com.joveth.dc.shop.domain.Food;
+import com.joveth.dc.shop.query.FoodQueryCriteria;
 import org.springframework.data.domain.Pageable;
 
 import java.util.Set;

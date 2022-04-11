@@ -1,7 +1,5 @@
 server:
   port: 8000
-  servlet:
-    context-path: /dc
 
 #配置数据源
 spring:

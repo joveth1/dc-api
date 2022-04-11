@@ -8,5 +8,5 @@ public class WebConstants {
     public static final String NORMAL = "normal";
     public static final String CLOSE = "close";
 
-    public static final String IMAGE_DIR = "images";
+
 }
